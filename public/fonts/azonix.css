@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Azonix';
+  src: url('/fonts/Azonix.woff2') format('woff2'),
+       url('/fonts/Azonix.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Additional font weights if available */
+@font-face {
+  font-family: 'Azonix';
+  src: url('/fonts/Azonix-Bold.woff2') format('woff2'),
+       url('/fonts/Azonix-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font feature settings for better rendering */
+.font-azonix {
+  font-family: 'Azonix', ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading specific styles */
+.azonix-heading {
+  font-family: 'Azonix', ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  font-weight: normal;
+}
+
+/* Large display text */
+.azonix-display {
+  font-family: 'Azonix', ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  font-weight: normal;
+}
